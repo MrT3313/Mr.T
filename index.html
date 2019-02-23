@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World React</title>
+</head>
+<!-- BODY -->
+
+<body>
+    <div id="target">
+
+    </div>
+</body>
+<!-- SCRIPT -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<!--APPLICATION -->
+<script type='text/javascript'>
+    const HelloWorld = React.createElement(
+        'h1', {
+            className: 'heading',
+            classID: 'headingID'
+        },
+        'HELLO WORLD'
+    );
+    console.log(HelloWorld)
+    // -- MOUNT 
+    ReactDOM.render(HelloWorld, document.getElementById('target'))
+</script>
+
+</html>
