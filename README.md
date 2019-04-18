@@ -1,9 +1,6 @@
 # Mr.T
 
--- My first attempt at working with ReCharts --
+-- Welcome To My Sandbox --
 
-
--- Links / Docs --
-
-1. ReCharts Website - http://recharts.org/en-US
-2. ReCharts Github - https://github.com/recharts/recharts/
+Projects:
+1. ReCharts --> Goal: how to render data in a visually appealing way using my knowledge of React & Redux. 
