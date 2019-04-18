@@ -6,30 +6,57 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="/MrTSandbox/index.css">.
+
+
     <title>Hello World React</title>
 </head>
 <!-- BODY -->
 
 <body>
-    <div id="target">
+    <div id="root">
+
+    </div>
+    <div id="babelContent">
+
+    </div>
+    <div id="three">
 
     </div>
 </body>
 <!-- SCRIPT -->
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 <!--APPLICATION -->
+
+
 <script type='text/javascript'>
-    const HelloWorld = React.createElement(
-        'h1', {
-            className: 'heading',
-            classID: 'headingID'
-        },
-        'HELLO WORLD'
-    );
-    console.log(HelloWorld)
+    const newElement = React.createElement('div', {
+        className: 'container'
+    }, React.createElement('h2', {}, 'Yo Dawg'));
+
+    console.log(newElement)
     // -- MOUNT 
-    ReactDOM.render(HelloWorld, document.getElementById('target'))
+    ReactDOM.render(newElement, document.getElementById('root'))
+</script>
+
+<script type="text/babel">
+    const babelElement = <div className="container">
+        <h2 className="babelElement"> Yo Dawg *coming from a more learnED perspective* </h2>
+    </div>;
+    ReactDOM.render(babelElement, document.getElementById('babelContent'))
+</script>
+
+<!-- // -- // -- // -- // -- //  -->
+<!-- Component -->
+<script type="text/babel">
+    const MyFirstReactComponent = props => {
+        console.log('props: ', props);
+        return <div>My First Component</div>;
+    };
+    ReactDOM.render(<MyFirstReactComponent name='octo' fightName='leaning man' />, document.getElementById('three'))
 </script>
 
 </html>
