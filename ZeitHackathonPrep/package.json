@@ -1,0 +1,6 @@
+{
+    "name": "ZeitHackathonPrep",
+    "dependencies": {
+        "@zeit/integration-utils": "latest"
+    }
+}

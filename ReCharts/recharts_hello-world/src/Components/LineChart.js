@@ -64,8 +64,13 @@ export default class Example_LineChart extends PureComponent {
             // margin={{ top: 50, right: 30, left: 20, bottom: 5 }}
             >
                 <CartesianGrid />
-                <XAxis dataKey="date" />
-                <YAxis dataKay='price'/>
+                <XAxis 
+                    dataKey="date"
+                />
+                <YAxis 
+                    dataKay='price'
+                    // domain={['auto', 'auto']} />
+                />
                 <Tooltip />
                 <Legend />
                 <Line type="monotone" dataKey="price" stroke="#8884d8" />
